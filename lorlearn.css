@@ -709,18 +709,18 @@
     top: 0;
     left: 0;
   }
-  #page-layout-container > div > div > div:first-child > div:nth-child(10) div:nth-child(4) .jam-widget.text-widget.wiki_editor_v2 {
+  #page-layout-container > div > div > div:first-child > div:nth-child(8) div:nth-child(4) .jam-widget.text-widget.wiki_editor_v2 {
     box-shadow: none;
     border: 2px grey dashed;
   }
-  #page-layout-container > div > div > div:first-child > div:nth-child(10) div:nth-child(4) .jam-widget.text-widget.wiki_editor_v2:hover .rjc-run {
+  #page-layout-container > div > div > div:first-child > div:nth-child(8) div:nth-child(4) .jam-widget.text-widget.wiki_editor_v2:hover .rjc-run {
     animation: rightleft 1.5s alternate infinite ease-in-out;
   }
   #page-layout-container
     > div
     > div
     > div:first-child
-    > div:nth-child(10)
+    > div:nth-child(8)
     div:nth-child(4)
     .jam-widget.text-widget.wiki_editor_v2:hover
     .rjc-start-img3 {
