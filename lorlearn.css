@@ -10,6 +10,8 @@
     } */
 /* -------------------------------------------------------------------------------- */
 
+p {line-height: 30px !important;}
+
 /* change carousel white bg opacity */
 .caption-overlay.partial-overlay.bottom-left {
   opacity: 0.97 !important;
@@ -103,6 +105,7 @@
 .home-page-settings-container {
   top: 30vh !important;
 }
+nav{display: none !important;}
 /* .row-container:nth-child(2) {
     position: fixed !important;
   } */
@@ -126,8 +129,9 @@
   padding-bottom: 0 !important;
 }
 #page-layout-container > div > div > div:first-child > div:last-child {
+  z-index: 99;
   position: fixed !important;
-  top: -10px;
+  top: 0;
   height: 50px;
   padding: 10px 0;
 }
@@ -142,8 +146,9 @@
   > div
   > div
   > div:last-child {
+    z-index: 99;
   position: absolute !important;
-  top: -2px;
+  top: -7px;
   display: block;
   width: 100%;
 }
@@ -207,7 +212,7 @@
   position: absolute !important;
   border-bottom: 1px #2d2d2d solid !important;
   width: 100vw !important;
-  background-color: #2d2d2d !important;
+  background-color: #000000 !important;
   /* color: white !important; */
   bottom: 0 !important;
   box-shadow: none !important;
@@ -216,17 +221,116 @@
   color: rgb(119 119 119);
 }
 
+/* Version 2 design */
+/* Remove white bg from around the custom widget */
+/* .jam-widget:has(.ui-integration-container) {
+  background-color: #ff000000 !important;
+}
+.jam-widget:has(.ui-integration-container) .sapFCardHeader{
+  display:none;
+} */
+.jam-widget{
+  background-color: #ff000000 !important;
+}
+.jam-widget .sapFCardHeader{
+  display:none;
+}
+.video-div + .widget-item {
+  display: none !important;
+}
+.image-widget {
+  border: none !important;
+}
+/* get rid of white border bleeding around the images on the front page */
+.layout-page-widget-container.image-widget.showing-img{background-color: transparent !important;}
+.jam-ac-header.image-text-caption.caption-inline.left {
+  background-color: white;
+}
+/* .jam-widget:has(#__component0---app--frame) {
+  background-color: #ffffff00 !important;
+}
+.jam-widget:has(#__component0---app--frame) #__card0-header{
+  display:none;
+} */
+
+/* News List */
+.newsList ol {
+  list-style: none;
+  counter-reset: item;
+  display: inline-flex;
+  font-family:F37 Ginger, Century Gothic, sans-serif !important;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  width:100%;
+}
+.newsList li {
+  counter-increment: item;
+  /* margin-right: 25px; */
+  display: inline-flex;
+  color:white;
+  width:270px;
+  font-family:F37 Ginger, Century Gothic, sans-serif !important;
+}
+.newsList li a {
+  color:white !important;
+  text-decoration: none !important;
+  font-family:F37 Ginger, Century Gothic, sans-serif !important;
+}
+.newsList li:before {
+  margin: -2px 15px 0 0;
+  content: counter(item);
+  color: #FFCD00;
+  font-size:48px;
+}
+.newsList li:nth-child(odd) {
+  margin-right: 20px;
+}
+
+/* SEARCH BUTTON */
+.search-button {
+min-height:38px !important;
+}
+/* BRILLIANT BASICS */
+/* Nav bar buttons for top */
+.rjc-bb-nav {
+  display: flex; flex-direction: row; flex-wrap: wrap; margin: 30px 0 15px 0 !important;
+}
+
+.rjc-bb-nav-btn {
+  border: 3px solid #FFCD00; padding: 5px; border-radius: 5px; font-weight: bold;
+  color:black !important; margin:0 10px 10px 0;
+}
+.rjc-bb-nav a{
+  display: flex;
+}
+.rjc-bb-nav-btn:hover {
+  background-color: #FFCD00;
+  transition: 0.2s all;
+  cursor:pointer !important;
+}
+.rjc-bb-nav-btn-fill {
+  background-color: #FFCD00;
+}
+/* .rjc-bb-nav-btn:first-child {
+  margin:0 15px 15px 0;
+}
+.rjc-bb-nav-btn:first-child {
+  margin:0 15px 15px 0;
+} */
 /* -------------------------------------------------------------------------------- */
 /* Widget titles */
 .sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
   color: black !important;
 }
-
+.sapFCard {
+  background: #ffffff00;
+}
 /* -------------------------------------------------------------------------------- */
 /* Custom buttons */
 .rjc-btn {
   background-color: #ffcd00;
-  color: rgb(45, 45, 45);
+  color: rgb(0, 0, 0);
   border: 1px solid #ffcd00;
   text-align: center;
   font-weight: 700;
@@ -382,7 +486,7 @@
 /* Text boxes - 10/01/2023*/
 .rjc-textBox {
   display: block;
-  margin: 5px 0 5px -15px !important;
+  margin: 5px -15px 5px -15px !important;
   color: #4e4e4e !important;
 }
 .rjc-textBoxHeader {
@@ -573,21 +677,32 @@ body.robus-ui
   height: 35px;
   display: flex;
   align-items: center;
+  padding: 8px 11px 8px 6px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 2px 7px;
 }
-.rjc-small-tile:hover .rjc-small-tile-icon {
+/* .rjc-small-tile:hover .rjc-small-tile-icon {
   transform: rotate(360deg);
+} */
+.rjc-small-tile:hover {
+  transform: scale(1.03);
+  transition: 0.3s all;
 }
 .rjc-small-tile-icon {
-  width: 50px;
+  width: 40px;
   float: left;
-  transition: transform 0.7s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
+  margin-right:10px;
 }
 .rjc-small-tile-text {
   float: left;
   color: #2d2d2d;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  margin-left: 10px;
+  margin-left: 0px;
+  font-family: F37 Ginger, Century Gothic, sans-serif;
+  margin-top: 2px;
 }
 
 /* Learning Journal */
@@ -966,13 +1081,14 @@ a:active,
 .rjc-ambassador-table {
   border-spacing: 1;
   border-collapse: collapse;
-  background: white;
+  background: #dedede;
   border-radius: 6px;
   overflow: hidden;
   max-width: 800px;
   width: 100%;
   /* margin: 0 auto; */
   position: relative;
+  color: black;
 }
 .rjc-ambassador-table th {
   background-color: #2d2d2d;
@@ -1001,14 +1117,32 @@ th {
   text-align: left;
 }
 
+/* NEW SUB PAGES VERSION 2 REVAMP */
+/* #page-layout-container > div > div > div:first-child > div:nth-child(1) .text-widget-content.wiki_content:has(.rjc-subpage-revamp-title) {
+  padding: 15px 0 !important;
+}
+#page-layout-container > div > div > div:first-child > div:nth-child(2):has(.rjc-revamp) {
+  margin: -185px 0 0 0 !important;
+} */
+/* #page-layout-container > div > div > div:first-child > div:nth-child(1) .text-widget-content.wiki_content:has(.rjc-subpage-revamp-title) {
+  padding: 15px 0 !important;
+} */
+#page-layout-container > div > div > div:first-child > div:nth-child(2) {
+  margin: -185px 0 0 0 !important;
+}
+.layout-page-editor.dws-layout-page-editor.optimize-page-layout {
+  background-color: white !important;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* Footer */
 #jam-body {
   padding-bottom: 0 !important;
 }
 #jam-footer {
-  background-color: #2d2d2d !important;
-  margin-top: 100px !important;
+  border-top: 1px solid #272727;
+    background-color: #000000 !important;
+    margin-top: -10px;
 }
 .rjc-footer {
   height: 515px;
@@ -1028,9 +1162,11 @@ th {
 }
 .rjc-footer-left img {
   width: 100px;
+  padding: 5px;
+  background-color: white;
 }
 .rjc-quote {
-  margin-top: 40px;
+  margin-top: 27px;
 }
 .rjc-footer-right {
   width: 600px;
@@ -1111,6 +1247,11 @@ th {
   /* background-position: top; */
   background-size: cover;
 }
+.rjc-guild-commercial-banner {
+  background-image: url(https://ubazyytfsaddefals8d5u8.core12.workzone.ondemand.com/embedded_images/show/lEfVbKkz5yDmqsg5Tjxsjm/thumbnail?max_x=1176&max_y=0);
+  /* background-position: top; */
+  background-size: cover;
+}
 .rjc-di-img {
   background-image: url(https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80) !important;
 }
@@ -1121,11 +1262,15 @@ th {
   background-image: url(https://i.ibb.co/tKdWjnF/acc.jpg);
 }
 .rjc-mentoring-circle-img {
-  background-image: url(https://i.ibb.co/3STyX95/circle.jpg);
+  background-image: url(https://i.ibb.co/74DjVHb/mc5.jpg);
 }
 .rjc-mentoring-collaborate-img {
   background-image: url(https://i.ibb.co/gmxvhth/sam-moghadam-khamseh-p-DOVqf-PZ4z8-unsplash.jpg);
 }
+.rjc-mentoring-collaborate2-img {
+  background-image: url(https://i.ibb.co/CPyN2KR/collab-img.jpg);
+}
+
 .rjc-guild-title {
   margin-top: 130px;
   font-weight: 700;
@@ -1165,7 +1310,7 @@ th {
   float: left;
 }
 .rjc-fs-left p {
-  margin: 0 0 0 -15px;
+  margin: 0 0 0 15px;
 }
 .rjc-fs-right {
   /* margin: 5px 0 -5px -15px !important; */
@@ -1178,7 +1323,7 @@ th {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
     rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
   position: absolute;
-  right: 0;
+  right: 30px;
 }
 .rjc-fs-right-text {
   /* margin: 5px 0 -5px -15px !important; */
@@ -1187,7 +1332,7 @@ th {
   float: right;
 }
 .rjc-fs-right-text p {
-  margin: 0 0 0 -15px;
+  margin: 0 0 0 15px;
 }
 .rjc-fs-left-img {
   /* margin: 5px 0 -5px -15px !important; */
@@ -1200,7 +1345,7 @@ th {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
     rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
   position: absolute;
-  left: 0;
+  left: 30px;
 }
 .rjc-fs-img1 {
   background-image: url(https://images.unsplash.com/photo-1544640808-32ca72ac7f37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
@@ -1369,7 +1514,7 @@ a {
 .rjc-dropbtn {
   padding: 12px 20px 12px 16px;
   color: white;
-  background-color: rgb(45, 45, 45);
+  background-color: rgb(0, 0, 0);
 
   transition: 0.35s ease-out;
   /* height: 20px; */
@@ -1377,7 +1522,7 @@ a {
 .rjc-arrow {
   padding: 12px 20px 12px 16px;
   color: white;
-  background-color: rgb(45, 45, 45);
+  background-color: rgb(0, 0, 0);
 
   transition: 0.35s ease-out;
   /* height: 20px; */
@@ -1467,7 +1612,7 @@ a {
 .rjc-navbar {
   display: flex;
   align-items: center;
-  background-color: rgb(45, 45, 45);
+  background-color: rgb(0, 0, 0);
 }
 .rjc-logo {
   padding: 0;
@@ -1751,8 +1896,8 @@ a {
 }
 /* Project delivery sub-pages table */
 .rjc-pd-table {
-  max-width: calc(100% + 15px);
-  width: calc(100% + 15px);
+  width: calc(100% + 0px);
+  max-width: 100%;
   table-layout: fixed;
 }
 .rjc-pd-table th {
@@ -1781,6 +1926,12 @@ th {
   padding: 7px 0 7px 23px !important;
   color: white;
 }
+
+/* image tile caption text */
+.image-text {
+  font-family: Century Gothic, F37 Ginger, Sans Serif;
+}
+
 /* max-width:1300px */
 
 @media (min-width: 767px) and (max-width: 1235px) {
@@ -1800,6 +1951,7 @@ th {
     max-height: 49px;
     display: flex;
     align-items: center;
+    border-radius: 0 0 4px 4px;
   }
   .rjc-footer {
     height: 433px;
@@ -1854,6 +2006,29 @@ th {
     width: 25px;
     transition: 0.3s all;
   }
+
+/* Learning path tile */
+.rjc-more-learning-path-hitbox {
+  height:174px !important;
+}
+.rjc-start-img3 {
+  height:80px;
+}
+.rjc-run {
+  height:115px;
+}
+.rjc-more-learning-paths-bottom {
+  top:136px;
+  width:184px;
+}
+.rjc-more-learning-paths-text{
+  font-size: 14px;
+  font-weight: 600;
+}
+.rjc-learning-path-arrow {
+  width:28px;
+}
+
 }
 /* MOBILE CSS */
 @media screen and (max-width: 480px) {
@@ -2033,7 +2208,9 @@ th {
 <div class="rjc-footer">
   <div class="rjc-footer-container">
     <div class="rjc-footer-left">
-      <img src="https://raw.githubusercontent.com/solensa/imghost/fc3037fa898a46d94e85d286aa73687534e4973d/log-logo-svg.svg">
+      <div class="rjc-footer-left-img">
+        <img src="https://raw.githubusercontent.com/solensa/imghost/fc3037fa898a46d94e85d286aa73687534e4973d/log-logo-svg.svg">
+      </div>
       <div class="rjc-quote">CHANGE THE WAY YOU LOOK AT THINGS AND THE THINGS YOU LOOK AT CHANGE</div>
     </div>
     <div class="rjc-footer-right">
