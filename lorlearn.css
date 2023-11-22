@@ -203,7 +203,7 @@ nav{display: none !important;}
 }
 
 /* -------------------------------------------------------------------------------- */
-/* WIDGET EDITS */
+/* WorkZone WIDGET EDITS */
 /* -------------------------------------------------------------------------------- */
 .jam-widget{
   background-color: #ff000000 !important;
@@ -228,6 +228,16 @@ nav{display: none !important;}
 }
 .sapFCard {
   background: #ffffff00;
+}
+/* Image widget hover-overs */
+.image-widget:hover {
+  transition: 0.3s all;
+}
+.image-widget:hover {
+  transform: scale(1.015) !important;
+  transition: 0.3s all;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -289,8 +299,9 @@ nav{display: none !important;}
 }
 
 /* -------------------------------------------------------------------------------- */
-/* CUSTOM BUTTONS */
+/* CUSTOM ELEMENTS */
 /* -------------------------------------------------------------------------------- */
+/* Button */
 .rjc-btn {
   background-color: #ffcd00;
   color: rgb(0, 0, 0);
@@ -309,207 +320,13 @@ nav{display: none !important;}
   border: 1px solid #dbb004;
   transition: 0.3s all;
 }
-
-/* -------------------------------------------------------------------------------- */
-/* Custom headers */
-/* .rjc-headers {
-  margin: 5px 0 -5px -15px !important;
-  position: absolute;
-  color: #4e4e4e !important;
-}
-.text-widget-content h1 {
-  margin-top: 30px !important;
-}
-.rjc-header-font {
-  font-weight: bold;
-  font-size: 140%;
-}
-.rjc-space-15 {
-  margin: 15px 0 35px 0;
-}
-.widget-header.jam-ac-header span {
-  font-size: 19px !important;
-}
-.sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
-  font-size: 19px !important;
-} */
-
-/* This gets rid of the icon on top of the "Jump back in widget" */
-/* .sapFCard .sapFCardHeader .sapFCardHeaderImage {
-  position: relative;
-  display: none;
-}
-.sapFCard .sapFCardHeader .sapFCardHeaderWrapper {
-  min-height: 15px;
-} */
-/* -------------------------------------------------------------------------------- */
-/* LOR Capability background */
-/* .row-container:nth-child(4) > div > div:nth-child(even) > div:nth-child(odd) > div {
-    background-color: #2d2d2d !important;
-   background-image: url(https://raw.githubusercontent.com/solensa/imghost/main/pattern_hexagon-7_1_2_0-0_0_1__1f1f1f_262621.png) !important;
-  } */
-
-/* .rjc-loriq-btn-span {
-    color: rgb(29, 29, 27);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 36px;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-  } */
-
-/* .layout-page-widget-container.text-widget.widget-lg {
-    } */
-
-/* Text boxes - 10/01/2023*/
+/* Textbox */
 .rjc-textBox {
   display: block;
   margin: 5px -15px 5px -15px !important;
   color: #4e4e4e !important;
 }
-.rjc-textBoxHeader {
-  margin-top: 0px !important;
-}
-
-/* -------------------------------------------------------------------------------- */
-/* Career Conversations tile - also used for other custom tiles) */
-.rjc-cc {
-  /* width: 55%; */
-  float: left;
-  /* padding-bottom: 5px; */
-  /* min-height: 300px; */
-}
-.rjc-cc-left {
-  float: left;
-  width: 55%;
-}
-.rjc-cc-right {
-  float: left;
-  display: flex;
-  justify-content: center;
-  width: 45%;
-}
-.rjc-cc-header {
-  color: #2d2d2d;
-  font-weight: 700;
-  font-size: 30px;
-  max-width: 100px;
-  text-align: left;
-}
-.rjc-cc p {
-  padding: 0 0 10px 0 !important;
-  color: #2d2d2d;
-}
-.rjc-cc-btn {
-  /* position: absolute;
-      float: left; */
-  margin: 8px 0 15px 0;
-  bottom: 15px;
-}
-.rjc-cc-btn:hover + .rjc-barchart .rjc-hori-r {
-  background-color: #ffcd00;
-  width: 30px;
-  transition: 0.3s all;
-}
-.rjc-cc-img {
-  width: 230px;
-  border-radius: 3px;
-}
-
-/* -------------------------------------------------------------------------------- */
-/* Upcoming developments tiles */
-.rjc-upcoming {
-  min-height: 176px;
-}
-/* -------------------------------------------------------------------------------- */
-/* Snack bar for pilot */
-/* .rjc-snackbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  .rjc-pilot-img {
-    float: left;
-    height: 28px;
-    margin-right: 12px;
-  }
-  .rjc-feedback {
-    float: left;
-    font-size: 16px;
-    color: white;
-    font-weight: 600;
-  }
-  .rjc-feedback-btn {
-    background-color: #ffcd00;
-    border: 2px solid #20201e;
-    margin: 0 0 0 15px;
-    color: #20201e;
-  }
-  .rjc-feedback-btn:hover {
-    background-color: #dbb004;
-    border: 2px solid #20201e;
-  }
-  #text_widget_397-widget-content {
-    padding: 9px !important;
-  }
-
-  #page-layout-container > div > div > div:first-child > div:nth-child(2) > div > div > div > .jam-widget {
-    position: absolute;
-    background-color: rgb(255, 205, 0) !important;
-    top: -20px;
-    border-radius: 0 0 3px 3px !important;
-    box-shadow: none !important;
-  } */
-
-/* Remove shadow and border around menu widget */
-body.robus-ui
-  .company-overview-container
-  .layout-page-editor
-  .text-widget.custom-mode,
-body.robus-ui
-  .group-overview-container
-  .layout-page-editor
-  .text-widget.custom-mode {
-  border-radius: 0 0 3px 3px !important;
-  box-shadow: none !important;
-}
-/* -------------------------------------------------------------------------------- */
-/* Image widget hover-overs */
-/* .image-widget-editor .image-widget-image {
-      transform-origin: center center !important;
-    } */
-.image-widget:hover {
-  transition: 0.3s all;
-}
-.image-widget:hover {
-  transform: scale(1.015) !important;
-  transition: 0.3s all;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
-}
-/* .image-widget:hover img {
-      transform: scale(1.01) !important;
-      transition: 0.3s all;
-    } */
-
-/* -------------------------------------------------------------------------------- */
-/* Networking */
-.rjc-connect {
-  font-size: 30px;
-  margin-top: -18px;
-  /* text-align: right; */
-}
-
-/* -------------------------------------------------------------------------------- */
-/* Spacer */
-.rjc-spacer {
-  height: 10px;
-  clear: both;
-}
+/* Seperator */
 .rjc-sep {
   position: absolute;
   width: 100%;
@@ -519,13 +336,14 @@ body.robus-ui
   margin-top: 14px;
 }
 
+/* Round 1 clean AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+
 /* Widget header */
 .widget-header.jam-ac-header {
   color: #2d2d2d !important;
   padding: 28px 0 28px 76px !important;
 }
 .rjc-widget-icon {
-  /* width: 32px; */
   position: absolute;
   top: 23px;
   left: 22px;
@@ -545,12 +363,6 @@ body.robus-ui
 .rjc-widget-icon2 {
   height: 32px;
   margin-right: 14px;
-}
-
-/* All learning button */
-.rjc-all-learn {
-  margin: -15px;
-  /* float: right; */
 }
 
 /* Custom small tiles */
