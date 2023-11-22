@@ -637,6 +637,10 @@ th {
   color: rgb(119 119 119);
   margin-top: 10px;
 }
+.rjc-footer-minisub a {
+  text-decoration: none !important;
+  color: rgb(119 119 119) !important;
+}
 .rjc-footer-feedback {
   padding: 10px;
   border: 2px solid white;
@@ -656,10 +660,6 @@ th {
 /* -------------------------------------------------------------------------------- */
 /* GUILDS PAGE */
 /* -------------------------------------------------------------------------------- */
-
-#image-widget-title {
-  padding: 25px 16px 16px 16px !important;
-}
 .rjc-guild-img {
   background-image: url(https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
   height: 130px;
@@ -683,12 +683,10 @@ th {
 }
 .rjc-guild-sustainability-banner {
   background-image: url(https://i.ibb.co/hsYN74J/sustainability-guild-img.jpg);
-  /* background-position: top; */
   background-size: cover;
 }
 .rjc-guild-commercial-banner {
   background-image: url(https://ubazyytfsaddefals8d5u8.core12.workzone.ondemand.com/embedded_images/show/lEfVbKkz5yDmqsg5Tjxsjm/thumbnail?max_x=1176&max_y=0);
-  /* background-position: top; */
   background-size: cover;
 }
 .rjc-di-img {
@@ -709,7 +707,6 @@ th {
 .rjc-mentoring-collaborate2-img {
   background-image: url(https://i.ibb.co/CPyN2KR/collab-img.jpg);
 }
-
 .rjc-guild-title {
   margin-top: 130px;
   font-weight: 700;
@@ -729,191 +726,7 @@ th {
   width: 50px;
   padding-right: 14px;
 }
-.rjc-pad-right {
-  margin-right: 10px;
-}
 
-/* LOR Programmes */
-.image-widget-editor.image-text a:hover {
-  text-decoration: none !important;
-}
-.image-text a:hover .image-text-caption {
-  text-decoration: none !important;
-}
-
-/* Financial support page */
-.rjc-fs-left {
-  /* margin: 5px 0 -5px -15px !important; */
-  color: #4e4e4e !important;
-  width: 50%;
-  float: left;
-}
-.rjc-fs-left p {
-  margin: 0 0 0 15px;
-}
-.rjc-fs-right {
-  /* margin: 5px 0 -5px -15px !important; */
-  color: #4e4e4e !important;
-  width: calc(50% - 91px);
-  float: right;
-  height: 240px;
-  border: white 15px solid;
-  /* margin: 40px -15px 40px 40px; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
-  position: absolute;
-  right: 30px;
-}
-.rjc-fs-right-text {
-  /* margin: 5px 0 -5px -15px !important; */
-  color: #4e4e4e !important;
-  width: 50%;
-  float: right;
-}
-.rjc-fs-right-text p {
-  margin: 0 0 0 15px;
-}
-.rjc-fs-left-img {
-  /* margin: 5px 0 -5px -15px !important; */
-  color: #4e4e4e !important;
-  width: calc(50% - 91px);
-  float: right;
-  height: 240px;
-  border: white 15px solid;
-  /* margin: 40px -15px 40px 40px; */
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
-  position: absolute;
-  left: 30px;
-}
-.rjc-fs-img1 {
-  background-image: url(https://images.unsplash.com/photo-1544640808-32ca72ac7f37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80);
-  background-position: center;
-  background-size: cover;
-}
-.rjc-fs-img2 {
-  background-image: url(https://images.unsplash.com/photo-1574802406791-ef6898f311d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1282&q=80);
-  background-position: bottom;
-  background-size: cover;
-}
-.rjc-fs-img3 {
-  background-image: url(https://images.unsplash.com/photo-1614036417651-efe5912149d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2119&q=80);
-  background-position: center;
-  background-size: cover;
-}
-
-.sapFCard .sapFCardHeader .sapFCardSubtitle {
-  color: #286eb4 !important;
-}
-.sapFCard .sapFCardHeader .sapFCardStatus {
-  color: #286eb4 !important;
-}
-.rjc-disable {
-  opacity: 0.3;
-}
-.rjc-footer-minisub a {
-  text-decoration: none !important;
-  color: rgb(119 119 119) !important;
-}
-
-/* annoying banner that loses z-index fix */
-/* #page-layout-container
-    > div
-    > div
-    > div:first-child
-    > div:nth-child(3)
-    > div
-    > div:nth-child(even)
-    .sapFCard.sapUiIntCard
-    .sapFCardHeader.sapFCardClickable {
-    visibility: hidden;
-    height: 30px;
-  } */
-
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapFCard.sapUiIntCard
-  .sapFCardHeader.sapFCardClickable {
-  visibility: hidden;
-  height: 30px;
-}
-
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapFCardContent {
-  overflow: visible;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapFCardContent::before {
-  position: absolute;
-  top: -50px;
-  font-size: 20px;
-  left: 10px;
-  content: "Jump Back In";
-  text-indent: 48px;
-  background: url(https://github.com/solensa/imghost/blob/main/jumping-man.png?raw=true)
-    no-repeat center left;
-  background-size: 32px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  text-align: right;
-}
-a {
-  text-decoration: none !important;
-}
-
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapMTB-Transparent-CTX.sapMTB {
-  padding: 0 0 8px 7px;
-}
-
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapMTBSpacer.sapMTBSpacerFlex.sapMBarChild {
-  width: 0;
-  flex: none;
-}
-.rjc-para-btn {
-  margin: 15px 0 0 0;
-}
-
-#page-layout-container > div > div > div:last-child {
-  top: 10%;
-}
 /* Inclusion+Wellbeing ---------------------------------------------------------------*/
 .rjc-iw-img1 {
   background-image: url(https://i.ibb.co/P50j8rn/Microsoft-Teams-image-5.jpg);
