@@ -4,6 +4,14 @@
 /* GENERAL */
 /* -------------------------------------------------------------------------------- */
 p {line-height: 30px !important;}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+.link-text {
+  color: #197780 !important;
+}
 
 /* -------------------------------------------------------------------------------- */
 /* CAROUSEL */
@@ -203,7 +211,7 @@ nav{display: none !important;}
 }
 
 /* -------------------------------------------------------------------------------- */
-/* WorkZone WIDGET EDITS */
+/* WORKZONE WIDGET EDITS */
 /* -------------------------------------------------------------------------------- */
 .jam-widget{
   background-color: #ff000000 !important;
@@ -304,7 +312,7 @@ nav{display: none !important;}
 /* Button */
 .rjc-btn {
   background-color: #ffcd00;
-  color: rgb(0, 0, 0);
+  color: #2d2d2d;
   border: 1px solid #ffcd00;
   text-align: center;
   font-weight: 700;
@@ -335,37 +343,7 @@ nav{display: none !important;}
   left: 0;
   margin-top: 14px;
 }
-
-/* Round 1 clean AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
-
-/* Widget header */
-.widget-header.jam-ac-header {
-  color: #2d2d2d !important;
-  padding: 28px 0 28px 76px !important;
-}
-.rjc-widget-icon {
-  position: absolute;
-  top: 23px;
-  left: 22px;
-  height: 32px;
-}
-.rjc-widget-div {
-  position: absolute;
-  top: 0px;
-  left: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 19px;
-  color: black;
-  height: 75px;
-}
-.rjc-widget-icon2 {
-  height: 32px;
-  margin-right: 14px;
-}
-
-/* Custom small tiles */
+/* Custom small tiles to showcase the different divisions on the homepage */
 .rjc-small-tile {
   height: 35px;
   display: flex;
@@ -375,9 +353,6 @@ nav{display: none !important;}
   border-radius: 4px;
   margin: 2px 7px;
 }
-/* .rjc-small-tile:hover .rjc-small-tile-icon {
-  transform: rotate(360deg);
-} */
 .rjc-small-tile:hover {
   transform: scale(1.03);
   transition: 0.3s all;
@@ -385,7 +360,6 @@ nav{display: none !important;}
 .rjc-small-tile-icon {
   width: 40px;
   float: left;
-  /* transition: transform 0.3s ease-in-out; */
   margin-right:10px;
 }
 .rjc-small-tile-text {
@@ -397,200 +371,7 @@ nav{display: none !important;}
   font-family: F37 Ginger, Century Gothic, sans-serif;
   margin-top: 2px;
 }
-
-/* Learning Journal */
-.rjc-career-link {
-  height: 136px;
-}
-.rjc-career-tile-img {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 75px;
-  border-radius: 0 0 4px 4px;
-}
-
-/* -------------------------------------------------------------------------------- */
-/* starter tiles for v2.0 */
-.rjc-start-img {
-  position: absolute;
-  top: 35px;
-  width: 200px;
-  right: 30px;
-}
-.rjc-rocketman {
-  width: 180px;
-  right: 33px;
-}
-.rjc-start-img2 {
-  position: absolute;
-  top: 44px;
-  width: 183px;
-  right: 30px;
-}
-.rjc-meditation {
-  width: 145px;
-  right: 33px;
-  top: 3px;
-}
-.rjc-space-bg {
-  position: absolute;
-  top: 70px;
-  width: 195px;
-  right: 6px;
-}
-.rjc-space {
-  width: 278px;
-  right: -52px;
-  top: 14px;
-}
-.rjc-window-bg {
-  top: 66px;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div:nth-child(odd)
-  h1 {
-  padding-left: 15px !important;
-}
-/* #page-layout-container > div > div > div:first-child > div:nth-child(3) > div > div:nth-child(odd) > div:nth-child(even):hover .rjc-rocketman { */
-/* height of second tile on right needs to be set */
-/* #page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(even)
-  > div
-  > div
-  > div:nth-child(3) {
-  max-height: 280px;
-} */
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(even)
-  > div
-  > div
-  > div:nth-child(3):hover
-  .rjc-rocketman {
-  animation: updown 1.5s alternate infinite ease-in-out;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(even)
-  > div
-  > div
-  > div:nth-child(3):hover
-  .rjc-rocketman-bg {
-  animation: updown2 1.5s alternate infinite ease-in-out;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(even)
-  > div
-  > div
-  > div:nth-child(2):hover
-  .rjc-space-bg {
-  animation: updown 1.5s alternate infinite ease-in-out;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(even)
-  > div
-  > div
-  > div:nth-child(2):hover
-  .rjc-space {
-  animation: updown2 1.5s alternate infinite ease-in-out;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(even)
-  > div
-  > div
-  > div:nth-child(2):hover
-  .rjc-window-bg {
-  animation: scaleIn 1.5s alternate infinite ease-in-out;
-}
-
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(even)
-  > div
-  > div
-  > div:nth-child(2):hover
-  .rjc-window {
-  animation: scaleOut 1.5s alternate infinite ease-in-out;
-}
-
-@keyframes updown {
-  to {
-    transform: translatey(-10px);
-  }
-}
-@keyframes updown2 {
-  to {
-    transform: translatey(-5px);
-  }
-}
-@keyframes rightleft {
-  to {
-    /* transform: translatex(-6px); */
-    transform: translate(-42%, 0%);
-  }
-}
-@keyframes rightleft2 {
-  to {
-    /* transform: translatex(-3px); */
-    transform: translate(-55%, 10%);
-  }
-}
-@keyframes scaleOut {
-  to {
-    transform: scale(1.02);
-  }
-}
-@keyframes scaleIn {
-  to {
-    transform: scale(0.95);
-  }
-}
-
+/* More Learning Paths Tile */
 .rjc-more-learning-paths {
   height: 155px;
   background-color: white;
@@ -598,7 +379,6 @@ nav{display: none !important;}
 .rjc-more-learning-paths-bottom {
   top: 165px;
   position: absolute;
-  /* float: left; */
   font-weight: 700;
   font-size: 16px;
   width: 250px;
@@ -607,7 +387,6 @@ nav{display: none !important;}
   float: left;
   margin-top: 5px;
 }
-
 .rjc-learning-path-arrow {
   float: right;
 }
@@ -615,7 +394,6 @@ nav{display: none !important;}
   position: absolute;
   margin: 0 auto;
   width: 150px;
-  /* top: 50%; */
   left: 50%;
   transform: translate(-50%, 10%);
 }
@@ -633,123 +411,14 @@ nav{display: none !important;}
   top: 0;
   left: 0;
 }
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(8)
-  div:nth-child(4)
-  .jam-widget.text-widget.wiki_editor_v2 {
-  box-shadow: none;
-  border: 2px grey dashed;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(8)
-  div:nth-child(4)
-  .jam-widget.text-widget.wiki_editor_v2:hover
-  .rjc-run {
-  animation: rightleft 1.5s alternate infinite ease-in-out;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(8)
-  div:nth-child(4)
-  .jam-widget.text-widget.wiki_editor_v2:hover
-  .rjc-start-img3 {
-  animation: rightleft2 1.5s alternate infinite ease-in-out;
-}
 
 /* -------------------------------------------------------------------------------- */
-/* Remove unneeded columns from the 'My Learning' widget */
-
-/* Have to prepend everything with following to target homepage: */
-/* #page-layout-container > div > div > div:first-child > div:nth-child(4) > div > div:nth-child(even) > div:nth-child(odd)  */
-/* #page-layout-container > div > div > div:first-child > div:nth-child(3) > div > div > div:nth-child(odd) */
-/* This makes the description column wider */
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapMFlexBox.sapMVBox.sapMFlexBoxJustifyStart.sapMFlexBoxAlignItemsStretch.sapMFlexBoxWrapNoWrap.sapMFlexBoxAlignContentStretch.sapUiSmallMarginBeginEnd.sapUiTinyMarginTopBottom.sapMFlexItemAlignAuto.sapMFlexBoxBGTransparent.sapMFlexItem:nth-child(
-    2
-  ) {
-  width: 60% !important;
-}
-/* This makes the description column text full-width */
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapMFlexBox.sapMVBox.sapMFlexBoxJustifyStart.sapMFlexBoxAlignItemsStretch.sapMFlexBoxWrapNoWrap.sapMFlexBoxAlignContentStretch.sapUiSmallMarginBeginEnd.sapUiTinyMarginTopBottom.sapMFlexItemAlignAuto.sapMFlexBoxBGTransparent.sapMFlexItem:nth-child(
-    2
-  )
-  div:nth-child(1) {
-  width: 100% !important;
-}
-/* This removes the type column */
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  > div
-  > div:nth-child(odd)
-  .sapMFlexBox.sapMVBox.sapMFlexBoxJustifyStart.sapMFlexBoxAlignItemsStretch.sapMFlexBoxWrapNoWrap.sapMFlexBoxAlignContentStretch.sapUiSmallMarginBeginEnd.sapUiTinyMarginTopBottom.sapMFlexItemAlignAuto.sapMFlexBoxBGTransparent.sapMFlexItem:nth-child(
-    3
-  ) {
-  display: none;
-}
-
-/* shorten the My Learning list and remove the end "show more" button */
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  .sapMListItems.sapMListUl.sapMListShowSeparatorsAll.sapMListModeNone.sapMListHasGrowing
-  li:nth-child(n + 6) {
-  display: none;
-}
-#page-layout-container
-  > div
-  > div
-  > div:first-child
-  > div:nth-child(3)
-  > div
-  ul.sapMListItems.sapMListUl.sapMListShowSeparatorsAll.sapMListModeNone.sapMListHasGrowing
-  ~ div.sapMListUl.sapMGrowingList {
-  display: none;
-}
-
+/* MY LEARNING PAGE */
 /* -------------------------------------------------------------------------------- */
-/* Mel Merret suggested edits 17.08.2022 */
-a,
-a:link,
-a:visited,
-a:hover,
-a:active,
-.link-text {
-  color: #197780 !important;
-}
+/* Colour of button on in-progress-learning widget */
 .sapMLnk:hover:not(.sapMLnkDsbl) {
   color: #2ba8b4 !important;
 }
-
 .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault {
   background-color: #197780 !important;
   color: white !important;
@@ -759,18 +428,10 @@ a:active,
   background-color: #2ba8b4 !important;
   transition: 0.3s all;
 }
-.rjc-btn {
-  background-color: #ffcd00;
-  border: 1px solid #ffcd00;
-  color: #2d2d2d;
-}
-.rjc-btn:hover {
-  background-color: #dbb004;
-}
 
 /* -------------------------------------------------------------------------------- */
-/* Learning Ambassador Table */
-
+/* LEARNING AMBASSADOR PAGE */
+/* -------------------------------------------------------------------------------- */
 .rjc-ambassador-table {
   border-spacing: 1;
   border-collapse: collapse;
@@ -779,7 +440,6 @@ a:active,
   overflow: hidden;
   max-width: 800px;
   width: 100%;
-  /* margin: 0 auto; */
   position: relative;
   color: black;
 }
@@ -810,8 +470,9 @@ th {
   text-align: left;
 }
 
-/* LEARNING TYPES TABLE */
-/* For how to create learning page */
+/* -------------------------------------------------------------------------------- */
+/* HOW TO CREATE LEARNING PAGE */
+/* -------------------------------------------------------------------------------- */
 .rjc-learning-types-table th {
   font-family: 'Century Gothic', sans-serif !important;
   font-size: 14px !important;
@@ -826,16 +487,10 @@ th {
   font-size: 14px !important;
 }
 
-/* NEW SUB PAGES VERSION 2 REVAMP */
-/* #page-layout-container > div > div > div:first-child > div:nth-child(1) .text-widget-content.wiki_content:has(.rjc-subpage-revamp-title) {
-  padding: 15px 0 !important;
-}
-#page-layout-container > div > div > div:first-child > div:nth-child(2):has(.rjc-revamp) {
-  margin: -185px 0 0 0 !important;
-} */
-/* #page-layout-container > div > div > div:first-child > div:nth-child(1) .text-widget-content.wiki_content:has(.rjc-subpage-revamp-title) {
-  padding: 15px 0 !important;
-} */
+/* -------------------------------------------------------------------------------- */
+/* VERSION 3 REVAMP SUBPAGES */
+/* -------------------------------------------------------------------------------- */
+/* Pull up the first div of content to overlay it onto the top image */
 #page-layout-container > div > div > div:first-child > div:nth-child(2) {
   margin: -185px 0 0 0 !important;
 }
@@ -843,13 +498,16 @@ th {
   background-color: white !important;
 }
 
-/* CTK Boxes Hover over */
+/* -------------------------------------------------------------------------------- */
+/* CAREER TOOLKIT PAGES */
+/* -------------------------------------------------------------------------------- */
+/* CTK skill boxes Hover over */
 .rjc-hoverupbox-wrap {
 	display:flex;
 	justify-content:center;
 	flex-direction: row;
-    flex-wrap: wrap;
-    font-family: Century Gothic, sans-serif;
+  flex-wrap: wrap;
+  font-family: Century Gothic, sans-serif;
 }
  .rjc-hoverupbox {
 	 position:relative;
@@ -862,13 +520,14 @@ th {
 	 border-radius: 6px;
 	 transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
 }
+/* Change background colour of select boxes*/
 .rjc-hoverupbox:nth-child(2),.rjc-hoverupbox:nth-child(4),.rjc-hoverupbox:nth-child(5),.rjc-hoverupbox:nth-child(7),.rjc-hoverupbox:nth-child(10),.rjc-hoverupbox:nth-child(12) {
 	background-color: #76CBD3;
 }
 .rjc-hoverupbox:nth-child(4n+1) {
 	margin-left:0px
 }
- .rjc-hoverupbox span, .rjc-hoverupbox div {
+.rjc-hoverupbox span, .rjc-hoverupbox div {
 	 display: block;
 	 height: 100%;
 	 text-align: center;
@@ -876,7 +535,8 @@ th {
 	 top: 0;
 	 font-size: 12px;
 }
- .rjc-hoverupbox span {
+/* Box title */
+.rjc-hoverupbox span {
 	 width: 100%;
    display: flex;
    align-items: center;
@@ -886,7 +546,8 @@ th {
 	 left: 0;
 	 transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
 }
- .rjc-hoverupbox div {
+/* Box hidden information that appears on hover */
+.rjc-hoverupbox div {
 	 height: calc(100% - 20px);
     padding: 10px;
     transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
@@ -909,10 +570,10 @@ th {
  .rjc-hoverupbox:hover div {
 	 top: 0%;
 }
- 
 
 /* -------------------------------------------------------------------------------- */
-/* Footer */
+/* FOOTER */
+/* -------------------------------------------------------------------------------- */
 #jam-body {
   padding-bottom: 0 !important;
 }
@@ -951,7 +612,6 @@ th {
   padding: 137px 0 50px 0;
   color: white;
 }
-
 .rjc-footer-right-c {
   width: 200px;
   float: left;
@@ -993,7 +653,9 @@ th {
   margin-right: 14px;
 }
 
-/* Guilds */
+/* -------------------------------------------------------------------------------- */
+/* GUILDS PAGE */
+/* -------------------------------------------------------------------------------- */
 
 #image-widget-title {
   padding: 25px 16px 16px 16px !important;
