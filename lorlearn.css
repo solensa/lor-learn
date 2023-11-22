@@ -1,22 +1,21 @@
 <style>
-/* .layout-page-widget-container:hover {
-      transition: 0.3s !important;
-    }
-    .layout-page-widget-container:hover {
-      transform: scale(1.015) !important;
-      transition: 0.3s !important;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-        rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
-    } */
-/* -------------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------------- */
+/* GENERAL */
+/* -------------------------------------------------------------------------------- */
 p {line-height: 30px !important;}
 
+/* -------------------------------------------------------------------------------- */
+/* CAROUSEL */
+/* -------------------------------------------------------------------------------- */
 /* change carousel white bg opacity */
 .caption-overlay.partial-overlay.bottom-left {
   opacity: 0.97 !important;
 }
-/* Catalog search bar */
+
+/* -------------------------------------------------------------------------------- */
+/* CATALOG SEARCH BAR */
+/* -------------------------------------------------------------------------------- */
 .catalog-search-widget .image-cropper img {
   display: none !important;
 }
@@ -29,15 +28,12 @@ p {line-height: 30px !important;}
 .catalog-search-widget .search-input {
   height: 38px !important;
   border: 0 !important;
-  /* background-color: #52544a !important; */
   background-color: #f7f7f7 !important;
   transition: 0.3s all;
-  /* color: rgb(210, 211, 203); */
   color: #2d2d2d;
   padding-left: 15px;
 }
 .catalog-search-widget .search-input:hover {
-  /* background-color: #6d7064 !important; */
   background-color: #fffde4 !important;
   transition: 0.3s all;
 }
@@ -48,7 +44,6 @@ p {line-height: 30px !important;}
 }
 .catalog-search-widget .search-input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  /* color: rgb(210, 211, 203); */
   color: #2d2d2d;
   font-style: normal;
   font-weight: 300 !important;
@@ -56,14 +51,12 @@ p {line-height: 30px !important;}
 }
 .catalog-search-widget .search-input:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  /* color: rgb(210, 211, 203); */
   color: #2d2d2d;
   font-style: normal;
   font-weight: 300 !important;
 }
 .catalog-search-widget .search-input::-ms-input-placeholder {
   /* Microsoft Edge */
-  /* color: rgb(210, 211, 203); */
   color: #2d2d2d;
   font-style: normal;
   font-weight: 300 !important;
@@ -89,8 +82,6 @@ p {line-height: 30px !important;}
 /* LOR Logo */
 .catalog-search-widget + .text-widget {
   position: absolute !important;
-
-  /* left: -28px; */
   left: 8px;
 }
 .catalog-search-widget + .text-widget .text-widget-content {
@@ -101,20 +92,13 @@ p {line-height: 30px !important;}
 }
 
 /* -------------------------------------------------------------------------------- */
-/* Top navbars */
+/* TOP NAVBARS */
+/* -------------------------------------------------------------------------------- */
 .home-page-settings-container {
   top: 30vh !important;
 }
 nav{display: none !important;}
-/* .row-container:nth-child(2) {
-    position: fixed !important;
-  } */
-/* .row-container:last-child {
-    position: fixed !important;
-    top: 30px;
-  } */
-
-/* Thanks to SAP had to replace .row-container with #page-layout-container > div > div > div:first-child > div */
+/* .row-container with #page-layout-container > div > div > div:first-child > div */
 /* this changes the height of the search bar so that the black bar behind isn't so big */
 #page-layout-container
   > div
@@ -129,13 +113,11 @@ nav{display: none !important;}
   padding-bottom: 0 !important;
 }
 #page-layout-container > div > div > div:first-child > div:last-child {
-  z-index: 99;
   position: fixed !important;
   top: 0;
   height: 50px;
   padding: 10px 0;
 }
-/*Adem changed this code*/
 #page-layout-container
   > div
   > div
@@ -146,16 +128,11 @@ nav{display: none !important;}
   > div
   > div
   > div:last-child {
-    z-index: 99;
   position: absolute !important;
   top: -7px;
   display: block;
   width: 100%;
 }
-/* change ends here*/
-
-/*Adem’s code starts from here*/
-
 #page-layout-container
   > div
   > div
@@ -164,7 +141,7 @@ nav{display: none !important;}
   .search-box-container {
   width: 100% !important;
 }
-
+/* Moves search bar to the right of navbar */
 #page-layout-container
   > div
   > div
@@ -179,6 +156,7 @@ nav{display: none !important;}
   float: right;
   width: 70%;
 }
+/* Moves custom navigation menu to the left of navbar */
 #page-layout-container
   > div
   > div
@@ -193,6 +171,7 @@ nav{display: none !important;}
   float: left;
   width: auto;
 }
+/* Moves custom navigation menu up slightly relative to the navbar */
 #page-layout-container
   > div
   > div
@@ -206,29 +185,26 @@ nav{display: none !important;}
   .rjc-navbar {
   margin: -5px !important;
 }
-/*Adem's code ends here*/
-/* move tabs to footer */
+.search-button {
+  min-height:38px !important;
+}
+/* Move tabs to footer */
 #home_nav_tabs_container {
   position: absolute !important;
   border-bottom: 1px #2d2d2d solid !important;
   width: 100vw !important;
   background-color: #000000 !important;
-  /* color: white !important; */
   bottom: 0 !important;
   box-shadow: none !important;
 }
+/* Changes tab title colours */
 .nav-tab-title {
   color: rgb(119 119 119);
 }
 
-/* Version 2 design */
-/* Remove white bg from around the custom widget */
-/* .jam-widget:has(.ui-integration-container) {
-  background-color: #ff000000 !important;
-}
-.jam-widget:has(.ui-integration-container) .sapFCardHeader{
-  display:none;
-} */
+/* -------------------------------------------------------------------------------- */
+/* WIDGET EDITS */
+/* -------------------------------------------------------------------------------- */
 .jam-widget{
   background-color: #ff000000 !important;
 }
@@ -246,14 +222,17 @@ nav{display: none !important;}
 .jam-ac-header.image-text-caption.caption-inline.left {
   background-color: white;
 }
-/* .jam-widget:has(#__component0---app--frame) {
-  background-color: #ffffff00 !important;
+/* Widget titles */
+.sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
+  color: black !important;
 }
-.jam-widget:has(#__component0---app--frame) #__card0-header{
-  display:none;
-} */
+.sapFCard {
+  background: #ffffff00;
+}
 
-/* News List */
+/* -------------------------------------------------------------------------------- */
+/* LOR LEARN NEWS */
+/* -------------------------------------------------------------------------------- */
 .newsList ol {
   list-style: none;
   counter-reset: item;
@@ -287,16 +266,13 @@ nav{display: none !important;}
   margin-right: 20px;
 }
 
-/* SEARCH BUTTON */
-.search-button {
-min-height:38px !important;
-}
+/* -------------------------------------------------------------------------------- */
 /* BRILLIANT BASICS */
+/* -------------------------------------------------------------------------------- */
 /* Nav bar buttons for top */
 .rjc-bb-nav {
   display: flex; flex-direction: row; flex-wrap: wrap; margin: 30px 0 15px 0 !important;
 }
-
 .rjc-bb-nav-btn {
   border: 3px solid #FFCD00; padding: 5px; border-radius: 5px; font-weight: bold;
   color:black !important; margin:0 10px 10px 0;
@@ -307,27 +283,14 @@ min-height:38px !important;
 .rjc-bb-nav-btn:hover {
   background-color: #FFCD00;
   transition: 0.2s all;
-  cursor:pointer !important;
 }
 .rjc-bb-nav-btn-fill {
   background-color: #FFCD00;
 }
-/* .rjc-bb-nav-btn:first-child {
-  margin:0 15px 15px 0;
-}
-.rjc-bb-nav-btn:first-child {
-  margin:0 15px 15px 0;
-} */
+
 /* -------------------------------------------------------------------------------- */
-/* Widget titles */
-.sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
-  color: black !important;
-}
-.sapFCard {
-  background: #ffffff00;
-}
+/* CUSTOM BUTTONS */
 /* -------------------------------------------------------------------------------- */
-/* Custom buttons */
 .rjc-btn {
   background-color: #ffcd00;
   color: rgb(0, 0, 0);
@@ -338,8 +301,6 @@ min-height:38px !important;
   transition: 0.3s all;
   padding: 10px;
   border-radius: 5px;
-  /* margin: -5px -15px 0 25px;
-      float: right; */
   margin: -5px 25px 0 -15px;
   float: left;
 }
@@ -351,7 +312,7 @@ min-height:38px !important;
 
 /* -------------------------------------------------------------------------------- */
 /* Custom headers */
-.rjc-headers {
+/* .rjc-headers {
   margin: 5px 0 -5px -15px !important;
   position: absolute;
   color: #4e4e4e !important;
@@ -371,96 +332,16 @@ min-height:38px !important;
 }
 .sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
   font-size: 19px !important;
-}
+} */
 
 /* This gets rid of the icon on top of the "Jump back in widget" */
-.sapFCard .sapFCardHeader .sapFCardHeaderImage {
+/* .sapFCard .sapFCardHeader .sapFCardHeaderImage {
   position: relative;
   display: none;
 }
 .sapFCard .sapFCardHeader .sapFCardHeaderWrapper {
   min-height: 15px;
-}
-/* -------------------------------------------------------------------------------- */
-/* Custom background LOR IQ */
-.rjc-loriq {
-  width: 55%;
-  float: left;
-  padding-bottom: 5px;
-  min-height: 300px;
-}
-.rjc-loriq-prefix {
-  position: absolute;
-  top: 25px;
-}
-.rjc-loriq-header {
-  color: white;
-  font-weight: 700;
-  font-size: 30px;
-  max-width: 100px;
-  text-align: left;
-}
-.rjc-loriq p {
-  padding: 0 0 10px 0 !important;
-  color: white;
-}
-.rjc-barchart {
-  float: right;
-  width: calc(45% - 80px);
-  padding: 70px 40px 0 40px;
-}
-.rjc-vert {
-  height: 150px;
-  width: 3px;
-  background-color: white;
-  float: left;
-}
-.rjc-hori {
-  width: calc(100% - 23px);
-  height: 20px;
-  background-color: white;
-  float: left;
-  margin: 5px 0 5px 10px;
-}
-.rjc-hori-r {
-  width: 0;
-  background-color: #ffcd00;
-  margin: 5px 0 0 0;
-  transition: 0.3s all;
-}
-.rjc-bar1 {
-  margin-top: 20px;
-  width: calc(100% - 93px);
-}
-.rjc-bar1-r {
-  margin: 20px 0 0 0;
-}
-.rjc-bar2 {
-  width: calc(100% - 63px);
-}
-.rjc-bar3 {
-  width: calc(100% - 93px);
-}
-.rjc-bar4 {
-  width: calc(100% - 33px);
-}
-.rjc-bar5 {
-  width: calc(100% - 63px);
-}
-
-.rjc-loriq-btn {
-  position: absolute;
-  float: left;
-  margin: 8px 0 15px 0;
-  bottom: 15px;
-  height: 16px;
-  width: 130px;
-}
-.rjc-loriq-btn:hover + .rjc-barchart .rjc-hori-r {
-  background-color: #ffcd00;
-  width: 30px;
-  transition: 0.3s all;
-}
+} */
 /* -------------------------------------------------------------------------------- */
 /* LOR Capability background */
 /* .row-container:nth-child(4) > div > div:nth-child(even) > div:nth-child(odd) > div {
@@ -1117,6 +998,22 @@ th {
   text-align: left;
 }
 
+/* LEARNING TYPES TABLE */
+/* For how to create learning page */
+.rjc-learning-types-table th {
+  font-family: 'Century Gothic', sans-serif !important;
+  font-size: 14px !important;
+}
+.rjc-learning-types-table td {
+  font-family: 'Century Gothic', sans-serif !important;
+  font-size: 12px !important;
+  padding: 15px 5px !important;
+}
+.rjc-learning-types-table td:first-child {
+  font-weight:700 !important;
+  font-size: 14px !important;
+}
+
 /* NEW SUB PAGES VERSION 2 REVAMP */
 /* #page-layout-container > div > div > div:first-child > div:nth-child(1) .text-widget-content.wiki_content:has(.rjc-subpage-revamp-title) {
   padding: 15px 0 !important;
@@ -1133,6 +1030,74 @@ th {
 .layout-page-editor.dws-layout-page-editor.optimize-page-layout {
   background-color: white !important;
 }
+
+/* CTK Boxes Hover over */
+.rjc-hoverupbox-wrap {
+	display:flex;
+	justify-content:center;
+	flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Century Gothic, sans-serif;
+}
+ .rjc-hoverupbox {
+	 position:relative;
+	 background-color: #00a7b5;
+	 width: calc((100% - 30px)/4);
+	 margin:5px 0 5px 10px;
+	 height: 140px;
+	 color: #fff;
+	 overflow: hidden;
+	 border-radius: 6px;
+	 transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+.rjc-hoverupbox:nth-child(2),.rjc-hoverupbox:nth-child(4),.rjc-hoverupbox:nth-child(5),.rjc-hoverupbox:nth-child(7),.rjc-hoverupbox:nth-child(10),.rjc-hoverupbox:nth-child(12) {
+	background-color: #76CBD3;
+}
+.rjc-hoverupbox:nth-child(4n+1) {
+	margin-left:0px
+}
+ .rjc-hoverupbox span, .rjc-hoverupbox div {
+	 display: block;
+	 height: 100%;
+	 text-align: center;
+	 position: absolute;
+	 top: 0;
+	 font-size: 12px;
+}
+ .rjc-hoverupbox span {
+	 width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+	 font-size: 140%;
+	 text-transform: uppercase;
+	 left: 0;
+	 transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+ .rjc-hoverupbox div {
+	 height: calc(100% - 20px);
+    padding: 10px;
+    transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+    line-height: 18px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+	 top:100%;
+}
+ .rjc-hoverupbox:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+  rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
+	 transform: scale(1.03);
+}
+ .rjc-hoverupbox:hover span {
+	 top: -72%;
+	 opacity: 0;
+}
+ .rjc-hoverupbox:hover div {
+	 top: 0%;
+}
+ 
 
 /* -------------------------------------------------------------------------------- */
 /* Footer */
