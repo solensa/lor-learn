@@ -331,7 +331,6 @@ nav {
 .jam-widget .sapFCardHeader {
   display: none;
 }
-
 .video-div + .widget-item {
   display: none !important;
 }
@@ -402,34 +401,6 @@ nav {
   margin-right: 20px;
 }
 
-/* -------------------------------------------------------------------------------- */
-/* MY CAREER */
-/* -------------------------------------------------------------------------------- */
-/* Shows the header (the face etc.) on the My Career page, "About Me" widget */
-.jam-widget .sapFCardHeader:has(.sapFAvatarImageContain) {
-  display:block;
-  box-shadow: rgba(0, 0, 0, 0.1) 28px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
-}
-/* Put a border around the box */
-.layout-page-widget-container.align-bottom-edge:has(.sapFCardHeaderItemBinded) {
-  border: 2px solid #63998C !important;
-  border-radius: 10px;
-  max-height: 565px;
-  max-width: 374px;
-  box-shadow: rgba(0, 0, 0, 0.1) 25px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
-}
-/* Shows the header (the face etc.) on the My Career page, "My Team" widget */
-.jam-widget .sapFCardHeader:has(.sapFCardHeaderItemBinded) {
-  display:block;
-  box-shadow: rgba(0, 0, 0, 0.1) 25px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
-}
-.sapMLIB:has(.sapFAvatarImage){
-  box-shadow: rgba(0, 0, 0, 0.1) 28px 0 25px -20px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -20px inset;
-  border-bottom: 1px dashed #ffcd00 !important;
-}
-.sapFCardSubtitle,.sapFCardStatus {
-  color:#ffcd00 !important;
-}
 /* -------------------------------------------------------------------------------- */
 /* BRILLIANT BASICS */
 /* -------------------------------------------------------------------------------- */
@@ -993,48 +964,8 @@ th {
 /* MOBILE APP EDITS */
 /* -------------------------------------------------------------------------------- */
 @media screen and (max-width: 480px) {
-  /* resize thmbnail on sub-pages */
-  .mobile-thumb {
-    max-width: 100% !important;
-    margin: 30px 0 20px 0 !important;
-  }
-  /* shuffle whole screen up */
   body#home_page_show {
-    margin-top: -60px;
-  }
-  .company-overview-content {
-    top: 10px;
-  }
-  /* make bg black in case any of it shows */
-  .page-layout-container-top.has-homepage-setting {
-    background-color: black;
-  }
-  .rjc-title-v2 {
-    line-height: 65px;
-  }
-  /* Need to move ll-quiz iframe into proper place */
-  .ui-integration-container {
-    margin-left: -15px;
-    width: 100vw;
-  }
-  /* remove empty boxes on mobile that cause spaces */
-  .mob-kill {
-    display: none;
-  }
-  /* remove spaces caused by elements removed in mobile mode (blank spaces by titles)*/
-  div:has(> .layout-page-widget-container.text-widget.align-bottom-edge):has(.mob-kill) {
-    display: none;
-  }
-  /* the ALL PATHS widget - show border radius*/
-  .rjc-more-learning-paths {
-    margin-top: 25px;
-  }
-  .rjc-more-learning-paths-bottom {
-    left: 5%;
-  }
-  /* reduce gap to tile above */
-  .text-widget-content.wiki_content:has(> .rjc-more-learning-paths) {
-    margin-top:3px !important
+    margin-top: -30px;
   }
   /* header */
   .rjc-dropdown {
