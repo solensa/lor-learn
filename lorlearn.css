@@ -126,7 +126,7 @@ nav {
 #page-layout-container > div > div > div:first-child > div:last-child {
   position: fixed !important;
   top: 0;
-  height: 50px;
+  height: 70px;
   padding: 10px 0;
 }
 #page-layout-container
@@ -328,8 +328,15 @@ nav {
 .jam-widget {
   background-color: #ff000000 !important;
 }
+.jam-widget:has(.sapUiXMLView) {
+  box-shadow: none !important;
+}
 .jam-widget .sapFCardHeader {
   display: none;
+}
+/* added this to remove a bottom-shadow on the LOR Launch page */
+.image-widget-editor {
+  box-shadow: none !important;
 }
 
 .video-div + .widget-item {
@@ -392,6 +399,7 @@ nav {
   text-decoration: none !important;
   font-family: F37 Ginger, Century Gothic, sans-serif !important;
 }
+
 .newsList li:before {
   margin: -2px 15px 0 0;
   content: counter(item);
@@ -403,14 +411,30 @@ nav {
 }
 
 /* -------------------------------------------------------------------------------- */
+/* LOR LAUNCH */
+/* -------------------------------------------------------------------------------- */
+/* For the common questions section - resuse the news code but change colours and orientation */
+.newsList.lorLaunch li a {
+  color: black !important;
+}
+.newsList.lorLaunch ol {
+  flex-direction: column;
+}
+.newsList.lorLaunch li {
+  width:fit-content;
+  align-items: center;
+  margin-top:15px;
+}
+
+/* -------------------------------------------------------------------------------- */
 /* MY CAREER */
 /* -------------------------------------------------------------------------------- */
-/* Shows the header (the face etc.) on the My Career page, "About Me" widget */
+/* Shows the header (the face etc.) on the My Career page, "About Me" widget and add a shadow */
 .jam-widget .sapFCardHeader:has(.sapFAvatarImageContain) {
   display:block;
   box-shadow: rgba(0, 0, 0, 0.1) 28px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
 }
-/* Put a border around the box */
+/* Put a border around the box and add a shadow */
 .layout-page-widget-container.align-bottom-edge:has(.sapFCardHeaderItemBinded) {
   border: 2px solid #63998C !important;
   border-radius: 10px;
@@ -418,15 +442,17 @@ nav {
   max-width: 374px;
   box-shadow: rgba(0, 0, 0, 0.1) 25px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
 }
-/* Shows the header (the face etc.) on the My Career page, "My Team" widget */
+/* Shows the header (the face etc.) on the My Career page, "My Team" widget and adds a shadow */
 .jam-widget .sapFCardHeader:has(.sapFCardHeaderItemBinded) {
   display:block;
   box-shadow: rgba(0, 0, 0, 0.1) 25px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
 }
+/* Put a shadow on the direct reports box */
 .sapMLIB:has(.sapFAvatarImage){
   box-shadow: rgba(0, 0, 0, 0.1) 28px 0 25px -20px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -20px inset;
   border-bottom: 1px dashed #ffcd00 !important;
 }
+/* Change "Name" and "Direct report: colors to yellow CTA colour */
 .sapFCardSubtitle,.sapFCardStatus {
   color:#ffcd00 !important;
 }
@@ -645,12 +671,15 @@ th {
 /* -------------------------------------------------------------------------------- */
 /* Pull up the first div of content to overlay it onto the top image */
 #page-layout-container > div > div > div:first-child > div:nth-child(2) {
-  margin: -185px 0 0 0 !important;
+  margin: -185px auto 0 auto !important;
 }
 .layout-page-editor.dws-layout-page-editor.optimize-page-layout {
   background-color: white !important;
 }
-
+/* The "full width" background now applies to all code within a row. Need to limit the width to keep it consistent */
+#page-layout-container > div > div > div:first-child > div > div {
+  max-width: 1190px;
+}
 /* -------------------------------------------------------------------------------- */
 /* CAREER TOOLKIT PAGES */
 /* -------------------------------------------------------------------------------- */
@@ -993,6 +1022,10 @@ th {
 /* MOBILE APP EDITS */
 /* -------------------------------------------------------------------------------- */
 @media screen and (max-width: 480px) {
+  /* Another silly edit by SAP (Apr 2024) where they ruined the mobile experience by adding a flex, without setting a column. This fixes. */
+  #page-layout-container > div > div > div:first-child > div > div > div{
+    flex-direction: column !important;
+  }
   /* resize thmbnail on sub-pages */
   .mobile-thumb {
     max-width: 100% !important;
