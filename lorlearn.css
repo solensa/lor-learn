@@ -13,7 +13,10 @@ a:active,
 .link-text {
   color: #197780 !important;
 }
-
+/* Change colour of font above video */
+.widget-header.jam-ac-header {
+  color: black !important;
+}
 /* -------------------------------------------------------------------------------- */
 /* CAROUSEL */
 /* -------------------------------------------------------------------------------- */
@@ -1274,7 +1277,7 @@ th {
   <div class="rjc-footer-container">
     <div class="rjc-footer-left">
       <div class="rjc-footer-left-img">
-        <img src="https://raw.githubusercontent.com/solensa/imghost/fc3037fa898a46d94e85d286aa73687534e4973d/log-logo-svg.svg">
+        <img src="https://www.laingorourke.com/media/i2entaej/logo.svg?width=185&height=85&rnd=133370939241030000">
       </div>
       <div class="rjc-quote">CHANGE THE WAY YOU LOOK AT THINGS AND THE THINGS YOU LOOK AT CHANGE</div>
     </div>
