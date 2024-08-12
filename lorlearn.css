@@ -375,7 +375,16 @@ nav {
 .image-text {
   font-family: Century Gothic, F37 Ginger, Sans Serif;
 }
-
+/* -------------------------------------------------------------------------------- */
+/* EMBEDDED WIDGETS */
+/* -------------------------------------------------------------------------------- */
+/* SF added an annoying header to web embed widegts */
+.jam-widget .sapFCardHeader:has(.sapFCardHeaderItemBinded){
+  display: none !important;
+}
+.jam-widget {
+  box-shadow: none !important;
+}
 /* -------------------------------------------------------------------------------- */
 /* LOR LEARN NEWS */
 /* -------------------------------------------------------------------------------- */
@@ -438,7 +447,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.1) 28px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
 }
 /* Put a border around the box and add a shadow */
-.layout-page-widget-container.align-bottom-edge:has(.sapFCardHeaderItemBinded) {
+.layout-page-widget-container.align-bottom-edge:has(.sapFCardSectionInteractive .sapFCardHeaderItemBinded) {
   border: 2px solid #63998C !important;
   border-radius: 10px;
   max-height: 565px;
