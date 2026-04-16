@@ -131,6 +131,7 @@ nav {
   top: 0;
   height: 70px;
   padding: 10px 0;
+  width:100%;
 }
 #page-layout-container
   > div
@@ -323,6 +324,60 @@ nav {
 }
 .rjc-logo img {
   height: 35px;
+}
+/* WORKSPACE */
+.jam-widget.search-widget {
+    margin-top:10px !important;
+}
+.workspace-actions.flex {
+    position: absolute;
+    bottom: 44px;
+    margin-left: 240px;
+}
+.workspace-info {
+    max-width:100% !important;
+    margin-top: 190px !important;
+    margin-left: -55px !important;
+}
+.workspace-info::before {
+    opacity: 0 !important;
+}
+.workspace-description{
+    display: none;
+}
+.workspace-content{
+    color:white !important;
+}
+.workspace-name {
+    color: white;
+    font-family: F37 Ginger, Century Gothic, Helvetica, sans-serif;
+    max-width: 1000px;
+    font-size: 68px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#group-tabs-container {
+    border-top: 8px solid red;
+    width: 1173px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    box-shadow: none !important;
+}
+.editor-container {
+    height:489px !important;
+}
+.jam-container {
+    width:1113px;
+}
+#jam-body {
+    background-color: white !important;
+}
+.items-container.ph2.flex.items-end {
+    margin-top:12px !important;
+}
+#bg-image-action {
+    position: absolute;
+    margin-left: 125px;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -683,14 +738,14 @@ th {
 /* -------------------------------------------------------------------------------- */
 /* Pull up the first div of content to overlay it onto the top image */
 #page-layout-container > div > div > div:first-child > div:nth-child(2) {
-  margin: -185px auto 0 auto !important;
+  margin: -70px auto 0 auto !important;
 }
 .layout-page-editor.dws-layout-page-editor.optimize-page-layout {
   background-color: white !important;
 }
 /* The "full width" background now applies to all code within a row. Need to limit the width to keep it consistent */
 #page-layout-container > div > div > div:first-child > div > div {
-  max-width: 1190px;
+  max-width: 1113px;
 }
 /* -------------------------------------------------------------------------------- */
 /* CAREER TOOLKIT PAGES */
@@ -956,34 +1011,6 @@ th {
 .rjc-guild-title-img {
   width: 50px;
   padding-right: 14px;
-}
-/* -------------------------------------------------------------------------------- */
-/* CAREERS PAGE */
-/* -------------------------------------------------------------------------------- */
-/* Enlarge and apply wobble effect on hover */
-.rjc-book-hover {
-  transition: transform 0.3s ease-in-out;
-}
-.rjc-book-hover:hover {
-  transform: scale(1.05); /* Enlarge the image */
-  transition: transform 0.3s ease;
-  animation: wobble 0.5s ease-in-out infinite;
-}
-
-/* Keyframes for the wobble animation */
-@keyframes wobble {
-  0%, 100% {
-    transform: scale(1.05) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.05) rotate(-5deg);
-  }
-  50% {
-    transform: scale(1.05) rotate(5deg);
-  }
-  75% {
-    transform: scale(1.05) rotate(-5deg);
-  }
 }
 
 /* -------------------------------------------------------------------------------- */
